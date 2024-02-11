@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function PropertyList() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 my-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
       {properties.map((property, i) => (
         <Link key={i} href={`/dashboard/${property.id}`}>
           <div className="w-full h-[240px] rounded-lg shadow-sm bg-main dark:bg-dark-secondary"></div>

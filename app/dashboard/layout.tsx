@@ -11,8 +11,8 @@ export default async function Layout({
 }) {
   const session = await auth();
   return (
-    <section className="bg-[#FFF] dark:bg-dark-primary">
-      <div className="border-b-[1px] border-dark-secondary dark:border-secondary py-2">
+    <div className="bg-[#FFF] dark:bg-dark-primary">
+      {/* <section className="border-b-[1px] border-dark-secondary dark:border-secondary py-2">
         <div className="max-w-[1280px] mx-auto px-4 xl:px-0">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-x-2">
@@ -39,7 +39,9 @@ export default async function Layout({
                     await signOut();
                   }}
                 >
-                  <button type="submit">Sign Out</button>
+                  <button type="submit" className="text-primary">
+                    Sign Out
+                  </button>
                 </form>
               </div>
             ) : (
@@ -50,8 +52,8 @@ export default async function Layout({
           </div>
           <PropertyTypeSelect />
         </div>
-      </div>
+      </section> */}
       {children}
-    </section>
+    </div>
   );
 }

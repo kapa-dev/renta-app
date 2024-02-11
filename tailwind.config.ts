@@ -17,6 +17,7 @@ const config: Config = {
     extend: {
       colors: {
         main: "#B4BDC6",
+        minor: "#F7F7F7",
 
         // LIGHT
         primary: "#3AB54A",
